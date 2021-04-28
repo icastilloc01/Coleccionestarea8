@@ -7,6 +7,7 @@ package Main;
 
 import Exception.EmpleadoException;
 import ConexionBD.*;
+import dao.EmpleadoDAO;
 import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -39,6 +40,7 @@ public class ReparacionEquipos {
         empleados.addAll(sustitutos);
         
         //Comienzo del menu
+        EmpleadoDAO.filtrarEmpleado();
         mostrarMenuPrincipal();        
     }
 

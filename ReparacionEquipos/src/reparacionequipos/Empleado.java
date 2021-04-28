@@ -144,7 +144,7 @@ public class Empleado implements Serializable {
     public static Empleado nuevoEmpleado() {
         Empleado nuevoEmpleado = new Empleado();
         Scanner in = new Scanner(System.in);
-        nuevoEmpleado.id = nextIdEmpleado();
+        //nuevoEmpleado.id = nextIdEmpleado();
         do {
             System.out.print("Introduzca el nombre del nuevo empleado: ");
             nuevoEmpleado.nombre = in.nextLine();
